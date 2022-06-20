@@ -1,7 +1,6 @@
 ﻿namespace LeaveManagement.Web.Data
 {
-    //a partical class can't be instanciated by itself
-    public partial class BaseEntity
+    public abstract class BaseEntity
     {
         public int Id { get; set; }
         public DateTime DateCreated { get; set; }
