@@ -11,5 +11,9 @@ namespace LeaveManagement.Web.Data
             : base(options)
         {
         }
+
+        //o nome da propriedade é o nome da tabela que vai ser criado
+        public DbSet<LeaveType> LeaveTypes { get; set; }
+        public DbSet<LeaveAllocation> LeaveAllocations { get; set; }
     }
 }
